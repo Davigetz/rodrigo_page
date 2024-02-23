@@ -1,0 +1,71 @@
+.container_quien {
+  margin-top: 105px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 350px;
+  grid-auto-rows: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  gap: 10px;
+  align-items: start;
+  justify-items: center;
+  align-content: center;
+  width: 100%;
+  max-width: 1280px;
+}
+
+@media screen and (max-width: 900px) {
+  .container_quien {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .contenedor-texto-r {
+    margin-left: 0px !important;
+  }
+
+  .grid-item {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.grid-item {
+  color: white;
+  display: flex;
+}
+
+.grid-item > h2 {
+  margin-left: 10px;
+}
+
+.texto {
+  max-width: 250px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  height: 300px;
+}
+
+.contenedor-texto-r {
+  margin-left: 40px;
+}
+
+.contenedor-texto-c {
+  margin-right: 40px;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.texto::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.texto {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.protagonistas-img {
+  max-width: 300px;
+}

@@ -1,0 +1,133 @@
+div.content {
+  margin-top: 150px;
+  height: 600px;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  background: #353644;
+  box-shadow:
+    20px 20px 60px #353644,
+    -20px -20px 60px #272837;
+}
+
+.contacto {
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  flex-direction: column;
+  max-width: 28rem;
+}
+
+.content.contacto > h2 {
+  color: aquamarine;
+}
+
+.content.contacto > form > div > label {
+  color: white;
+}
+
+.portafolio {
+  margin-top: 105px;
+  width: 100%;
+  padding: 1.25rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  min-height: 600px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 700px;
+  max-width: 1500px;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0.8; */
+}
+
+.banner {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1250px) {
+  .banner {
+    width: 1250px;
+  }
+}
+
+.wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-rows: 750px;
+  grid-auto-rows: 750px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 3fr));
+  gap: 10px;
+  align-items: start;
+  justify-items: center;
+  align-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  width: 300px;
+}
+
+.circulo {
+  width: 600px;
+  border-radius: 50%;
+  height: 600px;
+  background: #a1a1aa;
+  position: fixed;
+  /* x: 78px; */
+  /* y: 0; */
+  /* left: -10px; */
+  top: -396px;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(31px);
+  z-index: -1;
+}
+
+.icono {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.aspecto {
+  display: flex;
+  height: 3.5rem;
+}
+
+.contenedor {
+  width: 100%;
+  max-width: 1024px;
+  padding: 0 1em;
+  margin: 3em auto;
+}
+
+.alice-carousel__prev-btn,
+.alice-carousel__next-btn {
+  width: 5% !important;
+}
+
+.alice-carousel__prev-btn-item,
+.alice-carousel__next-btn-item {
+  color: white !important;
+}
