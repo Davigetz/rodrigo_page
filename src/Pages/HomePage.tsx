@@ -9,7 +9,7 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 
 export function HomePage() {
-  const [texto, setTexto] = useState(interes.texto);
+  const [texto, setTexto] = useState(interes.texto2);
   let deseo = new SplitType('p.intro', { types: 'words' });
   const contenedor = useRef<HTMLDivElement>(null);
   const target = useRef(null);

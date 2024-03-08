@@ -117,6 +117,9 @@ div.content {
   padding: 0 113px;
   text-align: justify;
   color: white;
+  overflow-y: auto;
+  height: 300px;
+  min-width: 450px;
 }
 
 .icono {
