@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import logo from '../logo_id_factory.svg';
 import './home-style.css';
 import interes from '../data/texto.json';
@@ -9,13 +9,17 @@ import { useGSAP } from '@gsap/react';
 gsap.registerPlugin(useGSAP);
 
 export function HomePage() {
-  const texto = interes.texto2;
-  const deseoTexto = new SplitType('p.intro', { types: 'words' });
+  const [texto, setTexto] = useState(interes.texto);
+  let deseo = new SplitType('p.intro', { types: 'words' });
   const contenedor = useRef<HTMLDivElement>(null);
+  const target = useRef(null);
+
   const tl = useRef();
 
   useGSAP(
     () => {
+      // @ts-ignore
+      const text = SplitType.create(target.current, { types: 'words,chars' });
       // @ts-ignore
       tl.current = gsap
         .timeline()
@@ -37,9 +41,9 @@ export function HomePage() {
           '<',
         )
         .fromTo(
-          deseoTexto.words,
+          text.words,
           { yPercent: -100, opacity: 0 },
-          { yPercent: 0, opacity: 1, stagger: 0.03, ease: 'power4.out' },
+          { yPercent: 0, opacity: 1, stagger: 0.02, ease: 'power4.out' },
         );
     },
     { scope: contenedor },
@@ -50,7 +54,9 @@ export function HomePage() {
       <div className="circulo" />
       <div className="introduccion">
         <img src={logo} className="logo" alt="logo" />
-        <p className="intro">{texto}</p>
+        <p className="intro" ref={target}>
+          {texto}
+        </p>
       </div>
     </div>
   );
