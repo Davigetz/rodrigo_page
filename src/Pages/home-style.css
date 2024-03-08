@@ -105,6 +105,19 @@ div.content {
   filter: blur(31px);
   z-index: -1;
 }
+.introduccion {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro {
+  padding: 0 113px;
+  text-align: justify;
+  color: white;
+}
 
 .icono {
   width: 1.5rem;
