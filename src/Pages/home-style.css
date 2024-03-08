@@ -120,6 +120,7 @@ div.content {
   overflow-y: auto;
   height: 300px;
   min-width: 450px;
+  padding-top: 55px;
 }
 
 .icono {
