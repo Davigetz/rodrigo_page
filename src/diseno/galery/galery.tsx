@@ -6,6 +6,7 @@ import shuffle from 'lodash.shuffle';
 import { useTransition, a } from '@react-spring/web';
 
 export const Galery = ({ imagenes }: { imagenes: any }) => {
+  console.log(imagenes);
   const columns = useMedia(
     ['(min-width: 950px)', '(min-width: 700px)', '(min-width: 460px)'],
     [4, 3, 2],
@@ -36,6 +37,13 @@ export const Galery = ({ imagenes }: { imagenes: any }) => {
   }, [columns, items, width]);
 
   const [file, setFile] = useState(null);
+  type data = {
+    cliente: String;
+    caption: String;
+    designer: String;
+    pais: String;
+  };
+  const [datos, setDatos] = useState<null | data>(null);
 
   const transitions = useTransition(gridItems, {
     key: (item: { imagen: HTMLImageElement; height: number; width: number }) => item.imagen,
@@ -46,6 +54,7 @@ export const Galery = ({ imagenes }: { imagenes: any }) => {
     config: { mass: 5, tension: 500, friction: 100 },
     trail: 25,
   });
+  console.log(datos);
 
   return (
     <div style={{ maxWidth: '1300px', width: '100%', minWidth: '300px' }}>
@@ -55,6 +64,15 @@ export const Galery = ({ imagenes }: { imagenes: any }) => {
             style={style}
             onClick={() => {
               setFile(keys.item.imagen);
+              console.log(keys);
+              const nuevosDatos = {
+                caption: keys.item.caption,
+                cliente: keys.item.cliente,
+                designer: keys.item.designer,
+                pais: keys.item.pais,
+              };
+              // @ts-ignore
+              setDatos({ ...nuevosDatos });
             }}
           >
             {item.imagen}
@@ -64,7 +82,15 @@ export const Galery = ({ imagenes }: { imagenes: any }) => {
       {file !== null && (
         <div className="popup-media" style={{ display: file ? 'block' : 'none' }}>
           <span onClick={() => setFile(null)}>&times;</span>
-          {file}
+          <div className="container-imagen">
+            <div style={{ display: 'flex', justifyContent: 'center' }}>{file}</div>
+            <div className="texto-imagenes">
+              <h1>{datos!.caption}</h1>
+              <h2>{datos!.cliente}</h2>
+              <p>{datos!.designer}</p>
+              <p>{datos!.pais}</p>
+            </div>
+          </div>
         </div>
       )}
     </div>

@@ -149,6 +149,10 @@ export const PortafolioPage = () => {
         imagen: <img src={myUrl} alt={item.public_id} height={height} width={width} />,
         height: height,
         witdh: width,
+        caption: item.context.custom.caption,
+        cliente: item.context.custom.cliente,
+        designer: item.context.custom.designer,
+        pais: item.context.custom.pais,
       };
     });
 
