@@ -39,7 +39,7 @@ export function HomePage() {
         .fromTo(
           deseoTexto.words,
           { yPercent: -100, opacity: 0 },
-          { yPercent: 0, opacity: 1, stagger: 0.03, duration: 0.3, ease: 'power4.out' },
+          { yPercent: 0, opacity: 1, stagger: 0.03, ease: 'power4.out' },
         );
     },
     { scope: contenedor },
