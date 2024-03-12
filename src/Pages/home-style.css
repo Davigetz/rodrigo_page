@@ -117,7 +117,7 @@ div.content {
 
 .intro {
   padding: 0 20px;
-  text-align: justify;
+  text-align: center;
   color: white;
   overflow-y: auto;
   height: 300px;
