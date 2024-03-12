@@ -111,16 +111,18 @@ div.content {
   align-content: center;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
 }
 
 .intro {
-  padding: 0 113px;
+  padding: 0 20px;
   text-align: justify;
   color: white;
   overflow-y: auto;
   height: 300px;
-  min-width: 450px;
-  padding-top: 55px;
+  padding-top: 30px;
+  max-width: 700px;
 }
 
 .icono {
