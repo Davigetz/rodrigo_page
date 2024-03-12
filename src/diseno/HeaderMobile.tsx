@@ -27,6 +27,7 @@ const HeaderMobile = () => {
             scale: 1,
             stagger: 0.1,
             ease: 'easeOutElastic',
+            duration: 0.3,
           },
         );
     },
