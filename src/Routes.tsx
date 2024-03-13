@@ -7,6 +7,7 @@ import { EvidenciaPage } from './Pages/EvidenciaPage';
 import { ContactPage } from './Pages/ContactPage';
 import { GraciasPage } from './Pages/GraciasPage';
 import { QuienesSomos } from './Pages/Quines';
+import Quehacemos from './Pages/Quehacemos';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: 'quienessomos',
         element: <QuienesSomos />,
+      },
+      {
+        path: 'quehacemos',
+        element: <Quehacemos />,
       },
 
       //   {

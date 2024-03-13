@@ -1,0 +1,15 @@
+.que-container {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.que-container > ul,
+.que-container > ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
