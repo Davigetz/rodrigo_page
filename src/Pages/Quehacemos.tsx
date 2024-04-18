@@ -7,7 +7,10 @@ const Quehacemos = () => {
     <div className="que-container">
       <div style={{ width: '100%', height: '70vh', display: 'flex', justifyContent: 'center' }}>
         <Suspense fallback={<div>Loading...</div>}>
-          <Spline scene="https://draft.spline.design/lenVqiEnsy81YInC/scene.splinecode" />
+          <Spline
+            scene="https://draft.spline.design/lenVqiEnsy81YInC/scene.splinecode"
+            style={{ display: 'flex', justifyContent: 'center' }}
+          />
         </Suspense>
       </div>
     </div>
