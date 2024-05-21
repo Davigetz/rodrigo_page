@@ -7,6 +7,8 @@
     "@cloudinary/url-gen": "^1.13.0",
     "@gsap/react": "^2.1.0",
     "@react-spring/web": "^9.7.3",
+    "@react-three/drei": "^9.105.6",
+    "@react-three/fiber": "^8.16.3",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.0.99",
     "@testing-library/jest-dom": "^5.17.0",
@@ -37,6 +39,7 @@
     "react-use-measure": "^2.1.1",
     "split-type": "^0.3.4",
     "swiper": "^11.0.5",
+    "three": "^0.164.1",
     "typescript": "^4.9.5",
     "uuidv4": "^6.2.13",
     "web-vitals": "^2.1.4"

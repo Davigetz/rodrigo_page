@@ -28,3 +28,7 @@ html {
   width: 100%;
   height: 100%;
 }
+
+.hero-title {
+  @apply text-center font-semibold text-6xl text-[#ccba99] opacity-0 max-md:mb-10;
+}
