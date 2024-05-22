@@ -39,7 +39,7 @@ const Quehacemos = () => {
           </div>
         </div>
       </div>
-      <section className="sm:py-32 py-20 sm:px-10 px-5">
+      <section className="flex justify-center mt-10">
         <div className="max-w-[1120px] relative">
           <p
             id="heading"
