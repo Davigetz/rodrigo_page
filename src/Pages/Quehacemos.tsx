@@ -6,9 +6,13 @@ import React, { Suspense, useRef, useState } from 'react';
 import { Model } from '../utils/preload';
 import './quehacemso.css';
 import { Cloudinary } from '@cloudinary/url-gen';
+
+import Modelview from '../components/modelview';
+
 const Quehacemos = () => {
   useGSAP(() => {
     gsap.to('#hero', { opacity: 1, delay: 1 });
+    gsap.to('#heading', { y: 0, opacity: 1, duration: 2 });
   }, []);
 
   // Create a Cloudinary instance and set your cloud name.
@@ -17,6 +21,7 @@ const Quehacemos = () => {
       cloudName: 'davigetz',
     },
   });
+
   return (
     <div className="que-container">
       <div className="flex">
@@ -34,15 +39,21 @@ const Quehacemos = () => {
           </div>
         </div>
       </div>
-      <div style={{ width: '100%', height: '70vh', display: 'flex', justifyContent: 'center' }}>
-        <Canvas>
-          <Suspense fallback={null}>
-            <Model />
-            <directionalLight intensity={2} position={[0, 2, 3]} />
-            <Environment preset="city" />
-          </Suspense>
-        </Canvas>
-      </div>
+      <section className="sm:py-32 py-20 sm:px-10 px-5">
+        <div className="max-w-[1120px] relative">
+          <p
+            id="heading"
+            className="text-[#ccba99] lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20"
+          >
+            Logo
+          </p>
+          <div className="flex flex-col items-center mt-5">
+            <div className="w-full h-[25vh] md:h-[50vh] overflow-hidden relative">
+              <Modelview />
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

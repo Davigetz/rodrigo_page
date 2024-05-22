@@ -10,313 +10,415 @@ export function Model(props: any) {
   return (
     <group {...props} dispose={null}>
       <mesh
-        castShadow
-        receiveShadow
-        // @ts-ignore
-        geometry={nodes.OuterCircle.geometry}
-        material={materials.parteExterna}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
-      />
-      <mesh
+        name="glass"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.glass.geometry}
         material={materials.vidrio}
-        position={[5.1459503, -0.6646184, -5.1208005]}
-        scale={5.0002642}
+        position={[0, -0.311, -0.223]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={5}
+        userData={{ name: 'glass' }}
       />
       <mesh
+        name="outerCircle"
+        castShadow
+        receiveShadow
+        // @ts-ignore
+        geometry={nodes.outerCircle.geometry}
+        material={materials.parteExterna}
+        position={[-0.013, -0.305, -0.697]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={4.941}
+        userData={{ name: 'outerCircle' }}
+      />
+      <mesh
+        name="I001"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.I001.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-4.09, 0.644, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'I.001' }}
       />
       <mesh
+        name="dot1"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.dot1.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-3.99, 1.205, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'dot1' }}
       />
       <mesh
+        name="M"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.M.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-3.428, 2.003, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'M' }}
       />
       <mesh
+        name="dot2"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.dot2.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-2.907, 2.831, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'dot2' }}
       />
       <mesh
+        name="A001"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.A001.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-2.071, 3.188, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'A.001' }}
       />
       <mesh
+        name="G001"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.G001.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-0.555, 3.869, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'G.001' }}
       />
       <mesh
+        name="do4"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.do4.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={[119.137558, 91.5366745, 119.137558]}
+        position={[0.323, 3.872, -0.178]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={[119.138, 91.537, 119.138]}
+        userData={{ name: 'do4' }}
       />
       <mesh
+        name="dot3"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.dot3.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-1.395, 3.681, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'dot3' }}
       />
       <mesh
+        name="E001"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.E001.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[1.017, 3.717, -0.174]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'E.001' }}
       />
       <mesh
+        name="R"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.R.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.43, -1.855, -0.165]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'R' }}
       />
       <mesh
+        name="T"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.T.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[1.696, -3.553, -0.18]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'T' }}
       />
       <mesh
+        name="Y"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.Y.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.837, -0.942, -0.18]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'Y' }}
       />
       <mesh
+        name="O"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.O.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[2.744, -3, -0.165]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'O' }}
       />
       <mesh
+        name="A"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.A.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-0.323, -4.319, -0.18]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'A' }}
       />
       <mesh
+        name="C"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.C.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[0.76, -4.081, -0.18]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'C' }}
       />
       <mesh
+        name="F"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.F.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-1.278, -3.592, -0.18]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'F' }}
       />
       <mesh
+        name="S"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.S.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-0.256, -0.331, -0.185]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'S' }}
       />
       <mesh
+        name="I"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.I.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[0.381, 0.081, -0.185]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'I' }}
       />
       <mesh
+        name="E"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.E.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-1.21, -0.849, -0.185]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'E' }}
       />
       <mesh
+        name="D"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.D.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-1.944, -1.224, -0.186]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'D' }}
       />
       <mesh
+        name="G"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.G.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[1.069, 0.513, -0.185]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'G' }}
       />
       <mesh
+        name="N"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.N.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[2.103, 1.075, -0.185]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'N' }}
       />
       <mesh
+        name="rw1"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.rw1.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[2.828, 1.141, -0.149]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'rw1' }}
       />
       <mesh
+        name="rw2"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.rw2.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.192, 1.378, -0.149]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'rw2' }}
       />
       <mesh
+        name="rw3"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.rw3.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.463, 1.537, -0.149]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'rw3' }}
       />
       <mesh
+        name="rw4"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.rw4.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.702, 1.661, -0.149]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'rw4' }}
       />
       <mesh
+        name="rw5"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.rw5.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[3.75, 1.877, -0.149]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'rw5' }}
       />
       <mesh
+        name="lw1"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.lw1.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-2.566, -1.96, -0.155]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'lw1' }}
       />
       <mesh
+        name="lw2"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.lw2.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-2.969, -2.131, -0.169]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'lw2' }}
       />
       <mesh
+        name="lw3"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.lw3.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-3.235, -2.297, -0.169]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'lw3' }}
       />
       <mesh
+        name="lw4"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.lw4.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-3.456, -2.452, -0.163]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'lw4' }}
       />
       <mesh
+        name="lw5"
         castShadow
         receiveShadow
         // @ts-ignore
         geometry={nodes.lw5.geometry}
         material={materials.plastico}
-        position={[-0.0592716, 0.0076551, 0.0589817]}
-        scale={119.137558}
+        position={[-3.549, -2.55, -0.158]}
+        rotation={[Math.PI / 2, 0, 0]}
+        scale={119.138}
+        userData={{ name: 'lw5' }}
       />
     </group>
   );
 }
 
-useGLTF.preload('/logo.glb');
+useGLTF.preload('/assets/glb/logo.glb');
