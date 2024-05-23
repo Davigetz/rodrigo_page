@@ -48,7 +48,7 @@ const Quehacemos = () => {
             Logo
           </p>
           <div className="flex flex-col items-center mt-5">
-            <div className="w-full h-[28vh] md:h-[45vh] overflow-hidden relative">
+            <div className="w-full h-[38vh] md:h-[40vh] lg:h-[30vh]overflow-hidden relative">
               <Modelview />
             </div>
           </div>
