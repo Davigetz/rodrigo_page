@@ -21,6 +21,7 @@ const Quehacemos = () => {
       cloudName: 'davigetz',
     },
   });
+  console.log(cld);
 
   return (
     <div className="que-container">
@@ -32,7 +33,7 @@ const Quehacemos = () => {
           <div className="md:w-10/12 w-9/12 max-w-[2000px] mt-5">
             <video className="pointer-events-none" autoPlay muted playsInline={true}>
               <source
-                src={cld.video('rodrigo-video/hero-v1').quality('auto').toURL()}
+                src={cld.video('rodrigo-video/hero').quality('auto').toURL()}
                 type="video/mp4"
               />
             </video>
