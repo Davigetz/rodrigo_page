@@ -27,7 +27,7 @@ const Quehacemos = () => {
       <div className="flex">
         <div className="h-5/6 w-full flex flex-col justify-center items-center">
           <p id="hero" className="hero-title">
-            Qué Hacemos
+            ¿Qué Hacemos?
           </p>
           <div className="md:w-10/12 w-9/12 max-w-[2000px] mt-5">
             <video className="pointer-events-none" autoPlay muted playsInline={true}>
