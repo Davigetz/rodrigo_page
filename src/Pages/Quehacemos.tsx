@@ -43,7 +43,7 @@ const Quehacemos = () => {
       <section className="flex justify-center mt-10">
         <div className="max-w-[1120px] relative">
           <div className="flex flex-col items-center mt-5">
-            <div className="w-full h-[38vh] md:h-[35vh] lg:h-[30vh]overflow-hidden relative">
+            <div className="w-full h-[35vh] md:h-[35vh] lg:h-[30vh]overflow-hidden relative">
               <Modelview />
             </div>
           </div>
