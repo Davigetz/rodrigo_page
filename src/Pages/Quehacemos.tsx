@@ -28,7 +28,7 @@ const Quehacemos = () => {
       <div className="flex">
         <div className="h-5/6 w-full flex flex-col justify-center items-center">
           <p id="hero" className="hero-title">
-            ¿Qué Hacemos?
+            Lo que hacemos
           </p>
           <div className="md:w-10/12 w-9/12 max-w-[2000px] mt-5">
             <video className="pointer-events-none" autoPlay muted playsInline={true}>
@@ -42,14 +42,8 @@ const Quehacemos = () => {
       </div>
       <section className="flex justify-center mt-10">
         <div className="max-w-[1120px] relative">
-          <p
-            id="heading"
-            className="text-[#ccba99] lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20"
-          >
-            Logo
-          </p>
           <div className="flex flex-col items-center mt-5">
-            <div className="w-full h-[38vh] md:h-[40vh] lg:h-[30vh]overflow-hidden relative">
+            <div className="w-full h-[38vh] md:h-[35vh] lg:h-[30vh]overflow-hidden relative">
               <Modelview />
             </div>
           </div>

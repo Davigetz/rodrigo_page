@@ -107,7 +107,11 @@ export const QuienesSomos = () => {
       </div>
       <div className="grid-item">
         {!largeScreen && (
-          <img src={carlos} alt="foto de Carlos Mario Correa" className="protagonistas-img" />
+          <img
+            src={carlos}
+            alt="foto de Carlos Mario Correa"
+            className="protagonistas-img carlos"
+          />
         )}
         <div className="contenedor-texto-c">
           <h1 style={{ fontWeight: 'bold', marginBottom: '10px' }}>Carlos Mario Correa Eastman</h1>
@@ -173,9 +177,7 @@ export const QuienesSomos = () => {
             </p>
           </div>
         </div>
-        {largeScreen && (
-          <img src={carlos} alt="foto de Carlos Mario Correa" className="protagonistas-img" />
-        )}
+        {largeScreen && <img src={carlos} alt="foto de Carlos Mario Correa" className="carlos" />}
       </div>
     </div>
   );
